@@ -1,5 +1,5 @@
 <?php
-namespace trntv\debug\xhprof\models\search;
+namespace hidden4003\debug\xhprof\models\search;
 use yii\base\Model;
 use yii\data\ArrayDataProvider;
 use yii\debug\components\search\Filter;
