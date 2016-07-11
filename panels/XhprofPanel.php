@@ -5,9 +5,9 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace trntv\debug\xhprof\panels;
+namespace hidden4003\debug\xhprof\panels;
 
-use trntv\debug\xhprof\models\search\Xhprof;
+use hidden4003\debug\xhprof\models\search\Xhprof;
 use Yii;
 use yii\base\Application;
 use yii\base\BootstrapInterface;
@@ -35,7 +35,7 @@ class XhprofPanel extends Panel implements BootstrapInterface
 
     public function getSummary()
     {
-        return Yii::$app->view->render('@trntv/debug/xhprof/views/summary.php', [
+        return Yii::$app->view->render('@hidden4003/debug/xhprof/views/summary.php', [
             'panel' => $this,
             'active' => !empty($this->data),
             'callCount' => count($this->data)
@@ -62,7 +62,7 @@ class XhprofPanel extends Panel implements BootstrapInterface
     {
         $searchModel = new Xhprof();
         $dataProvider = $searchModel->search(Yii::$app->request->getQueryParams(), $this->getModels());
-        return Yii::$app->view->render('@trntv/debug/xhprof/views/detail.php', [
+        return Yii::$app->view->render('@hidden4003/debug/xhprof/views/detail.php', [
             'panel' => $this,
             'dataProvider'=>$dataProvider,
             'searchModel'=>$searchModel
