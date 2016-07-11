@@ -1,14 +1,18 @@
 {
-    "name": "trntv/yii2-debug-xhprof",
+    "name": "hidden4003/yii2-debug-xhprof",
     "description": "xhprof panel for Yii2 debug module",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","yii2-debug","panel","xhprof"],
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Eugine Terentev",
             "email": "eugine@terentev.net"
+        },
+        {
+            "name": "Timofej Dod",
+            "email": "hidden@4you.lt"
         }
     ],
     "require": {
@@ -20,10 +24,10 @@
     },
     "autoload": {
         "psr-4": {
-            "trntv\\debug\\xhprof\\": ""
+            "hidden4003\\debug\\xhprof\\": ""
         }
     },
     "extra": {
-        "bootstrap": "trntv\\debug\\xhprof\\panels\\XhprofPanel"
+        "bootstrap": "hidden4003\\debug\\xhprof\\panels\\XhprofPanel"
     }
 }
